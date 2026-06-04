@@ -28,7 +28,6 @@ A pure frontend React/Vite web app for Nikon microscope photo switching ROI inte
   - Delete saved experiment
   - Clear current data
 
-
 ## Deploy directly on GitHub Pages
 
 Yes. You can deploy this app on GitHub Pages without running it locally. The repository includes a GitHub Actions workflow that builds `photoswitch-web-app` and publishes the generated `dist` folder to Pages.
