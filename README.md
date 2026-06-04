@@ -42,6 +42,23 @@ Yes. You can deploy this app on GitHub Pages without running it locally. The rep
 
 For a project page such as `https://yiningyao.github.io/Quick-Trans/`, Vite must use the repository name as its base path. `photoswitch-web-app/vite.config.js` reads GitHub's `GITHUB_REPOSITORY` environment variable during Actions builds and automatically sets the correct base path, for example `/Quick-Trans/` or `/nd2/`.
 
+
+### If the workflow is not visible in GitHub Actions
+
+If you do not see **Deploy Photoswitch ROI Analyzer to GitHub Pages** in the GitHub **Actions** tab, it usually means GitHub has not received this workflow file on the repository's default branch yet. Check these points:
+
+1. Make sure `.github/workflows/deploy-photoswitch-web-app.yml` exists in your GitHub repository, not only in a local copy or an unmerged pull request.
+2. If the workflow was added in a pull request, merge the pull request into the default branch first, or push the branch that contains the workflow file.
+3. Open **Actions** and enable workflows if GitHub shows a banner saying Actions are disabled for the repository.
+4. Open **Settings → Pages** and set **Source** to **GitHub Actions**.
+5. After the workflow file is on `main` or `master`, push one more small commit or open **Actions** again; the workflow should appear and can also be run manually with **workflow_dispatch**.
+
+You can also confirm the file is present on GitHub by opening this path in the repository file browser:
+
+```text
+.github/workflows/deploy-photoswitch-web-app.yml
+```
+
 ## Install
 
 ```bash
