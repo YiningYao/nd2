@@ -1,0 +1,21 @@
+{
+  "name": "photoswitch-roi-analyzer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "recharts": "latest",
+    "xlsx": "latest",
+    "papaparse": "latest",
+    "file-saver": "latest"
+  },
+  "devDependencies": {}
+}
